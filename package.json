@@ -19,7 +19,7 @@
       "properties": {
         "lookBookPlugin.fileUrl": {
           "type": "string",
-          "default": "none",
+          "default": "D://work//pythonProject//novelGet//111.txt",
           "description": "txt文件路径(全路径)"
         }
       }

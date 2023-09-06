@@ -26,7 +26,15 @@ export class LookBook{
       });
       
       rl.on('line', (line) => {
-        this.testLineArr.push(line);
+        if(line.length > 54){
+          let len = 0;
+          while(len <= line.length){
+            this.testLineArr.push(line.substring(len,len+50));
+            len+=50;
+          }
+        }else{
+          this.testLineArr.push(line);
+        }
       });
       
       rl.on('close', () => {
